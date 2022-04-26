@@ -1,5 +1,5 @@
 class NameEncoderDecoder{
-  public String decode(String name){
+  public String encode(String name){
     return  
              "NOTFORYOU"+  name 
                 .replase("e","1")
@@ -12,7 +12,7 @@ class NameEncoderDecoder{
   }   
   
   
- public String encode(String name){
+ public String decode(String name){
    return name  .replase("YESNOTFORYOU","")
                 .replase("NOTFORYOU","")
                 .replase("1","e")
